@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #000428, #004e92);
+    color: #FFFFFF;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #D3D3D3;
+    margin-bottom: 20px;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Text remains centered */
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 300px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+nav ul li a:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a img {
+    width: 24px; /* Consistent icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #FFFFFF;
+}
+
+footer a img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+footer a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    nav ul li a {
+        width: 90%;
+    }
+}
