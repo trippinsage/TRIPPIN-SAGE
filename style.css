@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* Added fallback font */
     background: linear-gradient(to right, #000428, #004e92);
     color: #FFFFFF;
     line-height: 1.6;
@@ -37,16 +37,18 @@ nav ul {
 
 nav ul li {
     margin: 20px 0;
+    display: flex; /* Use flexbox for positioning */
+    align-items: center; /* Align items vertically */
 }
 
 nav ul li a {
     display: flex;
-    align-items: center;
-    justify-content: center; /* Text remains centered */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
     text-decoration: none;
     color: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px 20px;
+    padding: 10px 20px; /* Adjusted padding */
     border-radius: 20px;
     width: 80%;
     max-width: 300px;
@@ -60,10 +62,21 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+nav ul li a img.social-icons {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px; /* Adjusted margin between image and text */
+}
+
 nav ul li a img {
-    width: 24px; /* Consistent icon size */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+nav ul li a span {
+    text-align: center;
+    margin-left: 10px; /* Adjusted margin between image and text */
+    padding-right: 8px; /* Added padding between text and icon */
 }
 
 /* Footer Styling */
