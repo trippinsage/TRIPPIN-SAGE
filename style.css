@@ -13,11 +13,36 @@ body {
     line-height: 1.6;
     padding: 20px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Background Video Styling */
+video.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Black tint with 20% opacity */
+    z-index: -1;
+}
+
+/* Header Styling */
 header {
     margin-bottom: 40px;
     padding: 60px 20px;
+    color: #ffffff;
 }
 
 header h1 {
@@ -47,11 +72,11 @@ nav ul {
 }
 
 nav li {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
-    width: auto; /* Adapt width to content */
+    width: auto;
 }
 
 nav li:hover {
@@ -69,9 +94,9 @@ nav a {
 }
 
 .social-icons {
-    width: 40px; /* Consistent size for social icons */
-    height: 40px; /* Keep square ratio */
-    margin-right: 8px; /* Space between icon and text */
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
 }
 
 /* Footer Styling */
@@ -79,13 +104,13 @@ footer {
     margin-top: 40px;
     padding: 20px;
     font-size: 0.8rem;
-    color: #888;
-    background-color: #f9fafb;
-    border-top: 1px solid #ccc;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark tint for footer */
+    border-top: 1px solid #00000071;
 }
 
 footer img {
-    width: 40px; /* Consistent size for the mail icon */
+    width: 40px;
     height: 40px;
 }
 
