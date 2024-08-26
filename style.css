@@ -99,21 +99,6 @@ nav a {
     margin-right: 8px;
 }
 
-/* Footer Styling */
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 0.8rem;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark tint for footer */
-    border-top: 1px solid #00000071;
-}
-
-footer img {
-    width: 40px;
-    height: 40px;
-}
-
 /* Button Styling */
 button {
     background-color: #007bff;
